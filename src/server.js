@@ -22,7 +22,7 @@ const corsOptions = {
       next(null, true);
     } else {
       // origin not found in the whitelist
-      next(new Error("Not allowed by CORS"));
+      next(new Error("Not allowed by CORS (not found in whitelist)"));
     }
   },
 };
