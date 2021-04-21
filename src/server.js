@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import listEndpoints from "express-list-endpoints";
 
-import booksRoutes from "./books/index.js";
+import commentsRoutes from "./comments/index.js";
 
 const app = express();
 
@@ -47,7 +47,7 @@ app.use(cors(corsOptions));
 
 // routers
 
-app.use("/books", booksRoutes);
+app.use("/comments", commentsRoutes);
 
 console.log(listEndpoints(app));
 
