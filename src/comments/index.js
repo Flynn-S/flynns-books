@@ -73,14 +73,14 @@ router.post("/", uploader.single("cover"), async (req, res, next) => {
   }
 });
 
-router.put("/:asin", async (req, res, next) => {
+router.put("/:bookasin", async (req, res, next) => {
   try {
   } catch (error) {
     next(error);
   }
 });
 
-router.delete("/:asin", async (req, res, next) => {
+router.delete("/:bookasin", async (req, res, next) => {
   try {
   } catch (error) {
     next(error);
